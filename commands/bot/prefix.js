@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 const Guild = require('../../database/models/prefix');
-const prefix = require('../../config/config.json');
-
 module.exports = {
     name: "prefix",
     category: "Bot",
@@ -22,7 +20,7 @@ module.exports = {
                     _id: mongoose.Types.ObjectId(),
                     guildID: message.guild.id,
                     guildName: message.guild.name,
-                    prefix: prefix.prefix
+                    prefix: process.env.prefix
                 });
 
                 newGuild.save()
