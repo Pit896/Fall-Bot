@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const xptables = require('../database/models/users');
 const num = 150
 const Guild = require('../database/models/prefix');
-const pr = require('../config/config.json');
 const discord = require('discord.js');
 const fall = require('fallguys-api');
 
@@ -20,7 +19,7 @@ module.exports = async (client) => {
                     _id: mongoose.Types.ObjectId(),
                     guildID: message.guild.id,
                     guildName: message.guild.name,
-                    prefix: pr.prefix
+                    prefix: procees.env.prefix
                 });
 
                 newGuild.save()
