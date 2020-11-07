@@ -1,4 +1,4 @@
-const fall = require('fallguys-api');
+const fall = require('fall-guys-api-fixed');
 const { MessageEmbed } = require('discord.js');
 
 
