@@ -3,7 +3,7 @@ const xptables = require('../database/models/users');
 const num = 150
 const Guild = require('../database/models/prefix');
 const discord = require('discord.js');
-const fall = require('fallguys-api');
+const fall = require('fall-guys-api-fixed');
 
 module.exports = async (client) => {
     client.on("message", async message => {
