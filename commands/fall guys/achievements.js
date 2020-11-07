@@ -14,7 +14,7 @@ module.exports = {
 
             const el = await fall.getAchievements();
 
-            let e = await el.getAchievement("Fall Bae");
+            let e = await el.getAchievement(args[0]);
     
             let embed = new MessageEmbed()
             .setFooter(`Requested by | ${message.author.username}`, message.author.displayAvatarURL())
