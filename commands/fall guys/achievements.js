@@ -9,9 +9,6 @@ module.exports = {
     aliases: ['ac', 'a'],
     run: async (client, message, args) => {
 
-        try {
-            if(!args.join(" ")) return message.channel.send(`Unknow Search.`);
-
             const el = await fall.getAchievements();
 
             let e = await el.getAchievement(args.join(""));
@@ -25,8 +22,6 @@ module.exports = {
             .setURL(e.icon)
     
             message.channel.send(embed);
-        } catch {
-            return message.channel.send("Invalid achievements!").then(msg => msg.delete({ timeout: 5000 }));
-        }
+
     }
 }
