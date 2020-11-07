@@ -17,7 +17,7 @@
     "common-tags": "^1.8.0",
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
-    "fallguys-api": "^1.1.0",
+    "fallguys-api": "git+https://github.com/Pit896/fallguys-api-fixed",
     "fallguysapi.js": "^1.0.4",
     "imageapi.js": "^1.0.19",
     "mongoose": "^5.10.11",
