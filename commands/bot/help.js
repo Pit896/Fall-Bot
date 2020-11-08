@@ -45,7 +45,7 @@ const roleColor =
         .setTitle("📬 Need help? Here are all of my commands:")
         .addFields(categories)
         .setDescription(
-          `Use \`(your prefix)help\` followed by a command name to get more additional information on a command. For example: \`(your prefix)help ban\`.`
+          `Use \`(your prefix)help\` followed by a command name to get more additional information on a command. For example: \`(your prefix)help ping\`.`
         )
         .setFooter(
           `Requested by ${message.author.tag}`,
