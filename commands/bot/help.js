@@ -44,6 +44,7 @@ const roleColor =
       const embed = new MessageEmbed()
         .setTitle("📬 Need help? Here are all of my commands:")
         .addFields(categories)
+        .addFields("Command with no help: `tier` (Leveling System)")
         .setDescription(
           `Use \`(your prefix)help\` followed by a command name to get more additional information on a command. For example: \`(your prefix)help ping\`.`
         )
