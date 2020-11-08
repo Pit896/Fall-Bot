@@ -3,9 +3,20 @@ const client = new discord.Client({
     disableEveryone: true
 });
 
+const DBL = require('dblapi.js');
+const dbl = new DBL(process.env.DBL, client);
+
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
 
+
+["posted"].forEach(d => {
+    require(`./DBL/${d}`)(dbl)
+});
+
+["error"].forEach(d => {
+    require(`./DBL/${d}`)(dbl)
+});
 
 ["command"].forEach(handler => {
     require(`./handlers/${handler}`)(client)
