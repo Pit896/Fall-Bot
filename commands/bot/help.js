@@ -13,6 +13,7 @@ module.exports = {
             guildID: message.guild.id
         }, (err, guild) => {
             if(err) console.log(err);
+        });
   
 const roleColor =
       message.guild.me.displayHexColor === "#000000"
