@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { readdirSync } = require('fs');
-const Guild = require('../../../database/models/prefix.js');
+const Guild = require('../../database/models/prefix.js');
 
 module.exports = {
   name: 'help',
