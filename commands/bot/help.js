@@ -53,7 +53,7 @@ const roleColor =
         .addFields(categories)
         .addField("Command with no help:", "`tier` (Leveling System)")
         .setDescription(
-          `Use \`(your prefix)help\` followed by a command name to get more additional information on a command. For example: \`${settings.prefix}help ping\`.`
+          `Use \`${settings.prefix}help\` followed by a command name to get more additional information on a command. For example: \`${settings.prefix}help ping\`.`
         )
         .setFooter(
           `Requested by ${message.author.tag}`,
@@ -71,7 +71,7 @@ const roleColor =
 
       if (!command) {
         const embed = new MessageEmbed()
-          .setTitle(`Invalid command! Use \`(your prefix)help\` for all of my commands!`)
+          .setTitle(`Invalid command! Use \`${settings.prefix}help\` for all of my commands!`)
           .setColor("FF0000");
         return message.channel.send(embed);
       }
