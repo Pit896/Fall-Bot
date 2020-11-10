@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { readdirSync } = require('fs');
+const Guild = require('../../database/models/prefix.js');
 
 module.exports = {
   name: 'help',
@@ -7,6 +8,11 @@ module.exports = {
   description: 'FallGuys Bot help',
   usage: 'f!help | f!help <cmd_name>',
   run: async (client, message, args) => {
+    
+        const settings = await Guild.findOne({
+            guildID: message.guild.id
+        }, (err, guild) => {
+            if(err) console.log(err);
   
 const roleColor =
       message.guild.me.displayHexColor === "#000000"
@@ -46,7 +52,7 @@ const roleColor =
         .addFields(categories)
         .addField("Command with no help:", "`tier` (Leveling System)")
         .setDescription(
-          `Use \`(your prefix)help\` followed by a command name to get more additional information on a command. For example: \`(your prefix)help ping\`.`
+          `Use \`(your prefix)help\` followed by a command name to get more additional information on a command. For example: \`${settings.prefix}help ping\`.`
         )
         .setFooter(
           `Requested by ${message.author.tag}`,
@@ -71,7 +77,7 @@ const roleColor =
 
       const embed = new MessageEmbed()
         .setTitle("Command Details:")
-        .addField("PREFIX:", `\`(your prefix)\``)
+        .addField("PREFIX:", `\`${settings.prefix}\``)
         .addField(
           "COMMAND:",
           command.name ? `\`${command.name}\`` : "No name for this command."
@@ -85,8 +91,8 @@ const roleColor =
         .addField(
           "USAGE:",
           command.usage
-            ? `\`(your prefix)${command.name} ${command.usage}\``
-            : `\`(your prefix)${command.name}\``
+            ? `\`${settings.prefix}${command.name} ${command.usage}\``
+            : `\`${settings.prefix}${command.name}\``
         )
         .addField(
           "DESCRIPTION:",
