@@ -1,5 +1,8 @@
 const { MessageEmbed } = require("discord.js")
 
+  @param {String} 
+  @param {TextChannel}
+
 module.exports = async (text, channel) => {
     let embed = new MessageEmbed()
     .setColor("RED")
