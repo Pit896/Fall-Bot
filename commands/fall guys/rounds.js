@@ -5,7 +5,7 @@ module.exports = {
     name: "rounds",
     category: "Fall Guys",
     description: "Send you all fall guys minigames",
-    usage: "f!rounds <number between 1 to 29>",
+    usage: "f!rounds <number between 1 to 30>",
     aliases: ['round'],
     run: async (client, message, args) => {
 
@@ -56,7 +56,7 @@ module.exports = {
         });
 
 
-        if(args[0] > 29) return message.channel.send("Please provide a __number__ between **1** and **29**")
+        if(args[0] > 30) return message.channel.send("Please provide a __number__ between **1** and **29**")
         if(args[0] < 1) return message.channel.send("Please provide a __number__ between **1** and **29**")
         if(isNaN(args[0])) return message.channel.send("Please provide a __number__ between **1** and **29**")
 
