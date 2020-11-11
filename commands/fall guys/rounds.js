@@ -436,8 +436,19 @@ module.exports = {
     
             message.channel.send(embed);
 
+        } else if(args[0] == '30') {
+            let embed = new MessageEmbed()
+            .setTitle(`${emoji("770670042060161074")} BIG FANS`)
+            .setColor('YELLOW')
+            .setTimestamp()
+            .setThumbnail("https://i0.wp.com/media.criticalhit.net//2020/11/Fall-Guys-Big-Fans-Screenshot.jpg")
+            .addField("Type:", "Race")
+            .addField("Size:", "Large")
+            .addField("Designer:", "N/A")
+            .setDescription("Big Fans is an obstacle course divided into four main sections to traverse. Each section consists of several fans that spin slowly. The first section consists of two medium-sized fans that converge into one large-sized fan. The second section contains one large fan in the center, with a small-sized fan on either side. The third section consists of three small-sized fans which converge into two medium-sized fans, which further converge into a medium-sized fan with a rotating beam to jump over. The fourth and final section consists of two medium-sized fans which converge into one large-sized fan; all of these fans have rotating Beams to jump over. ");
+    
+            message.channel.send(embed);               
         }
-
 
         function emoji (id) {
             return client.emojis.cache.get(id).toString();
