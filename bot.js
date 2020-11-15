@@ -18,9 +18,9 @@ client.aliases = new discord.Collection();
     require(`./DBL/${d}`)(dbl)
 });
 
-["getBot"].forEach(d => {
-    require(`./DBL/${d}`)(dbl)
-});
+//["getBot"].forEach(d => {
+//    require(`./DBL/${d}`)(dbl)
+//});
 
 ["command"].forEach(handler => {
     require(`./handlers/${handler}`)(client)
