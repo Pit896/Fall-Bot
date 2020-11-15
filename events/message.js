@@ -109,7 +109,7 @@ module.exports = async (client) => {
                 return client.emojis.cache.get(id).toString();
             }
         
-        process.on("unhandledRejection", async err => {
+        process.on("unhandledRejection", async e => {
             message.react('💢')
             .then(msg => {
                 let filter = (reaction, user) => reaction.emoji.name === '💢' && user.id === message.author.id;
