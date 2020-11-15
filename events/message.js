@@ -108,5 +108,24 @@ module.exports = async (client) => {
             function emoji (id) {
                 return client.emojis.cache.get(id).toString();
             }
+        
+        process.on("unhandledRejection", async err => {
+            message.react('💢')
+            .then(msg => {
+                let filter = (reaction, user) => reaction.emoji.name === '💢' && user.id === message.author.id;
+                
+                let f = filter.createReactionCollector(filter, { time: 7000 });
+                
+                f.on('collect', r => {
+                    let embed = new discord.MessageEmbed()
+                    .setTitle("Error")
+                    .setTimestamp()
+                    .setDescription(`Error:\n\n${e}`)
+                    .setColor("RED")
+                    
+                    message.channel.send(embed);
+                });
+            });
+        });
     });
 }
