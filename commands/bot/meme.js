@@ -3,7 +3,7 @@ const random = new Random();
 
 module.exports = {
     name: 'meme',
-    category: 'Bot',
+    category: 'Fun',
     description: 'Send you a random meme',
     usage: 'f!meme',
     run: async (client, message, args) => {
