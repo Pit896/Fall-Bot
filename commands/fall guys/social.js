@@ -20,6 +20,7 @@ module.exports = {
         .addField(`${emoji("772488751045541889")}Website Support:`, `[Website Support Link](https://support.fallguys.com/)`)
         .addField(`${emoji("772802791222935552")}Twitter:`, `[Twitter Link](https://twitter.com/fallguysgame?lang=en)`)
         .addField(`${emoji("768537186139766814")}Youtube:`, `[Youtube Link](https://www.youtube.com/playlist?list=PLeF76CCdo1_cgHWhk-MAD5FjhNGOgh3hX)`)
+        .addField(`${emoji("777531182392410112")}Twitch:`, `[Twitch Link](https://www.twitch.tv/directory/game/Fall%20Guys)`)
         .addField(`${emoji("772802979635265576")}Steam:`, `[Steam Link](https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/)`)
         .addField(`${emoji("772803203024027658")}PlayStation:`, `[PlayStation Link](https://www.playstation.com/en-us/games/fall-guys-ultimate-knockout-ps4/)`)
         .addField(`${emoji("772803426135965697")}Instagram:`, `[Instagram Link](https://www.instagram.com/fallguysgame/?hl=en)`)
