@@ -4,7 +4,7 @@ const moment = require('moment');
 module.exports = {
     name: 'user-info',
     description: 'Send you info of a member',
-    category: 'Moderation',
+    category: 'General',
     usage: 'f!user-info <member>',
     aliases: ['userinfo'],
     run: async (client, message, args) => {
