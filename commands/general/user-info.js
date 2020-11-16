@@ -26,9 +26,9 @@ module.exports = {
 				`**❯ Time Created:** ${moment(member.user.createdTimestamp).format('LT')} ${moment(member.user.createdTimestamp).format('LL')} ${moment(member.user.createdTimestamp).fromNow()}`
 			])
 			.addField('Member', [
-				`**❯ Highest Role:** ${member.roles.highest.id === message.guild.id ? 'None' : member.roles.highest.name}`,
+				`**❯ Highest Role:** ${member.roles.highest.id === message.guild.id ? 'None' : member.roles.highest}`,
 				`**❯ Server Join Date:** ${moment(member.joinedAt).format('LL LTS')}`,
-				`**❯ Hoist Role:** ${member.roles.hoist ? member.roles.hoist.name : 'None'}`,
+				`**❯ Hoist Role:** ${member.roles.hoist ? member.roles.hoist : 'None'}`,
 				`**❯ Roles [${roles.length}]:** ${roles.length < 10 ? roles.join(' | ') : roles.length > 10 ? this.client.utils.trimArray(roles) : 'None'}`,
 				`\u200b`
 			]);
