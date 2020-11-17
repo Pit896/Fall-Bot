@@ -10,6 +10,9 @@ const dbl = new DBL(process.env.DBL, client);
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
 client.config = config;
+client.colors = config.colors;
+client.emotes = config.emotes;
+client.queue = new Map();
 
 
 ["posted"].forEach(d => {
