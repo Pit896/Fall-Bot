@@ -14,6 +14,7 @@ const player = new Player(client);
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
 client.config = config;
+client.player = player;
 
 
 ["posted"].forEach(d => {
