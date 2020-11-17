@@ -66,6 +66,12 @@ module.exports = {
           if (!song) {
             queue.voiceChannel.leave();
             message.client.queue.delete(message.guild.id);
+            let goodbye = new MessageEmbed()
+            .setColor('GREEN')
+            .setAuthor("No Music In Queue")
+            .setDescription("No Music in Queue. Goodbye 👋")
+
+            message.channel.send(goodbye).then(m => m.delete({ timeout: 8000 }));
             return;
           }
     
