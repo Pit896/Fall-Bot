@@ -4,10 +4,12 @@ const client = new discord.Client({
 });
 
 const DBL = require('dblapi.js');
+const config = require('./config/config.json');
 const dbl = new DBL(process.env.DBL, client);
 
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
+client.config = config;
 
 
 ["posted"].forEach(d => {
