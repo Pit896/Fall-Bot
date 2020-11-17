@@ -92,8 +92,8 @@ const roleColor =
         .addField(
           "USAGE:",
           command.usage
-            ? `\`${settings.prefix}${command.name} ${command.usage}\``
-            : `\`${settings.prefix}${command.name}\``
+            ? `\`${command.name} ${command.usage}\``
+            : `\`${command.name}\``
         )
         .addField(
           "DESCRIPTION:",
