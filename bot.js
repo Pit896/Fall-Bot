@@ -16,9 +16,9 @@ client.config = config;
     require(`./DBL/${d}`)(dbl)
 });
 
-["error"].forEach(d => {
-    require(`./DBL/${d}`)(dbl)
-});
+//["error"].forEach(d => {
+//    require(`./DBL/${d}`)(dbl)
+//});
 
 //["getBot"].forEach(d => {
 //    require(`./DBL/${d}`)(dbl)
