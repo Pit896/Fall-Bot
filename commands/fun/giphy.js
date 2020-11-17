@@ -1,4 +1,4 @@
-const giphy = require('giphy-api')("W8g6R14C0hpH6ZMon9HV9FTqKs4o4rCk");
+const giphy = require('giphy-api')(process.env.GIPHY_API);
 
 
 module.exports = {
