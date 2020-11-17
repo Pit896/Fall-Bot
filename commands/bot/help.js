@@ -90,12 +90,6 @@ const roleColor =
             : "No aliases for this command."
         )
         .addField(
-          "USAGE:",
-          command.usage
-            ? `\`${command.name} ${command.usage}\``
-            : `\`${command.name}\``
-        )
-        .addField(
           "DESCRIPTION:",
           command.description
             ? command.description
