@@ -9,6 +9,7 @@
   "author": "Pit.js",
   "license": "MIT",
   "dependencies": {
+    "@discordjs/opus": "^0.3.3",    
     "ascii-table": "0.0.9",
     "body-parser": "^1.19.0",
     "common-tags": "^1.8.0",
