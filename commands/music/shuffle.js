@@ -39,7 +39,7 @@ module.exports = {
         .setFooter(`Current server volume is ${serverQueue.volume}`)
         .setDescription("Shuffled te queue...")
 
-        if(serverQueue.songs.length === 1) embed.setDescription(`No songs. To play next add songs by \`${settings.prefix}play <song_name> | ${settings.prefix}play <song_link>\``)
+        if(serverQueue.songs.length === 1) embed.setDescription(`No songs. To play next add songs by \`${settings.prefix}play <song_name> | ${settings.prefix}play <song_link>\``), embed.setAuthor("No Music in Queue!")
 
         message.channel.send(embed);
     }
