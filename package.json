@@ -26,6 +26,7 @@
     "giphy-api": "^2.0.1",
     "http": "0.0.1-security",
     "imageapi.js": "^1.0.19",
+    "lyrics-finder": "^21.4.0",    
     "moment": "^2.29.1",
     "mongoose": "^5.10.11",
     "ms": "^2.1.2",
