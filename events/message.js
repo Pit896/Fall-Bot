@@ -9,6 +9,7 @@ module.exports = async (client) => {
     client.on("message", async message => {
         if(message.author.bot) return;
         if(message.channel.type == 'news') return;
+        if(message.channel.type == 'dm') return;
 
         const settings = await Guild.findOne({
             guildID: message.guild.id
