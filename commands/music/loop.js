@@ -11,7 +11,7 @@ module.exports = {
 
         const serverQueue = message.client.queue.get(message.guild.id);
 
-        if(!serverQueue) return sendError("There's nothing playing.");
+        if(!serverQueue) return sendError("There's nothing playing.", message.channel);
         const channel = message.member.voice.channel;
         if (!channel)return sendError("I'm sorry but you need to be in a voice channel to loop music!", message.channel);
 
