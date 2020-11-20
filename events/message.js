@@ -18,7 +18,7 @@ module.exports = async (client) => {
                     _id: mongoose.Types.ObjectId(),
                     guildID: message.guild.id,
                     guildName: message.guild.name,
-                    prefix: procees.env.prefix
+                    prefix: process.env.prefix
                 });
 
                 newGuild.save()
