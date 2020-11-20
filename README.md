@@ -7,7 +7,7 @@ Here is the Source Code.
 
 
 ```
-FallGuys Bot is a Fall Guys Tracker Bot, Fun, Leveling System, Music, Fun and General Commands.
+FallGuys Bot is a Fall Guys Tracker Bot, Fun, Music, Fun and General Commands.
 Use some library:
 
     "@discordjs/opus": "^0.3.3",
