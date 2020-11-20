@@ -12,7 +12,7 @@ module.exports = {
         if(args[0] < 0) return sendError("Please a number between 1 and 10", message.channel);
 
         const channel = message.member.voice.channel;
-        if (!channel)return sendError("You need to be in a voice channel to play music!", message.channel);
+        if (!channel)return sendError("You need to be in a voice channel to set volume!", message.channel);
         const serverQueue = message.client.queue.get(message.guild.id);
         if (!serverQueue) return sendError("There is nothing playing.", message.channel);
         if (!args[0])return message.channel.send(`The current volume is: **${serverQueue.volume}**`);
