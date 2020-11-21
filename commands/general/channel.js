@@ -2,10 +2,10 @@ const { MessageEmbed } = require('discord.js');
 
 
 module.exports = {
-    name: 'channelinfo',
+    name: 'channel-info',
     category: 'General',
-    desciption: 'Send you a server channel info',
-    usage: 'f!channelinfo <#channelname>',
+    description: 'Send you a server channel info',
+    usage: 'f!channel-info <#channelname>',
     aliases: ['channel'],
     run: async (client, message, args) => {
         const channel = message.mentions.channels.first() || message.channel  
