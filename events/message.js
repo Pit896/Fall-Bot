@@ -48,9 +48,5 @@ module.exports = async (client) => {
     
         if (command) 
             command.run(client, message, args);        
-      
-            function emoji (id) {
-                return client.emojis.cache.get(id).toString();
-            }
         });
 }
