@@ -5,7 +5,7 @@ module.exports = {
     name: 'channel-info',
     category: 'General',
     description: 'Send you a server channel info',
-    usage: 'f!channel-info <#channelname>',
+    usage: 'f!channel-info | f!channel-info <#channelname>',
     aliases: ['channel'],
     run: async (client, message, args) => {
         const channel = message.mentions.channels.first() || message.channel  
