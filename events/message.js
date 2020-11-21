@@ -25,7 +25,7 @@ module.exports = async (client) => {
                 .then(res => console.log(res))
                 .catch(err => console.log(err));
 
-                return message.channel.send(`Please Retype the Command`).then(m => m.delete({ timeout: 5000 }));
+                return message.channel.send(`Please Retype the Command. You are now saved in our Database`).then(m => m.delete({ timeout: 5000 }));
 
             }
         });
