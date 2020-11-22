@@ -44,6 +44,6 @@ readdir('./DBL/', async (err, files) => {
     if(err) return console.log(err.stack);
     files.forEach(file => {
         if(!file.endsWith(".js")) return;
-        const DBL = require(`./DBL/${file}`)(client);
+        const DBL = require(`./DBL/${file}`)(client)(dbl);
     });
 });
