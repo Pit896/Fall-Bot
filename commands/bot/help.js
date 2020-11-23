@@ -76,7 +76,7 @@ const roleColor =
         return message.channel.send(embed);
       }
       
-      if(!command == 'rank') {
+      if(args[0] == 'rank') {
         let embed2 = new MessageEmbed()
         .setTitle("Command Details:")
         .addField("PREFIX:", `\`${settings.prefix}\``)
