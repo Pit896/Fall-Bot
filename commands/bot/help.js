@@ -69,13 +69,17 @@ const roleColor =
           (c) => c.aliases && c.aliases.includes(args[0].toLowerCase())
         );
       
+      if(!command) {
+        return;
+      }
+      
       if(args[0] == 'rank') {
         let embed2 = new MessageEmbed()
         .setTitle("Command Details:")
         .addField("PREFIX:", `\`${settings.prefix}\``)
         .addField(
           "COMMAND:",
-          "rank"
+          "\`rank\`"
         )
         .addField("ALIASES:", "No aliases for this command.")
         .addField("DESCRIPTION:", "See your rank in the leveling system")
