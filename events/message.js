@@ -51,8 +51,7 @@ module.exports = async (client) => {
     
         if (command) 
             command.run(client, message, args);        
-        });
-
+        
         let user = await xptables.findOne({
             serverID: message.guild.id,
             userID: message.author.id
@@ -98,5 +97,6 @@ module.exports = async (client) => {
                 user.exp = user.exp- + -amount;
                 user.save();
             }
-        }    
+        } 
+   });   
 }
