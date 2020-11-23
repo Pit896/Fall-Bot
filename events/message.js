@@ -62,6 +62,7 @@ module.exports = async (client) => {
             let author = message.author
             let card = new canva.Rank()
             .setAvatar(author.displayAvatarURL({ dynamic: false, format: "png" }))
+            .renderEmojis(true)            
             .setUsername(author.username)
             .setDiscriminator(author.discriminator)
             .setCurrentXP(user.exp)
