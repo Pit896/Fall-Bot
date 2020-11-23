@@ -23,8 +23,6 @@ Use some library:
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "fall-guys-api-fixed": "^1.0.1", -> Made by Me (: 
-    "fallguys-api": "^1.1.0",
-    "fallguysapi.js": "^1.0.4",
     "ffmpeg": "0.0.4",
     "giphy-api": "^2.0.1",
     "http": "0.0.1-security",
