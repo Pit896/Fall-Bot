@@ -58,14 +58,14 @@ module.exports = async (client) => {
         });
 
         if(message.content.startsWith(prefix + "rank")) {
-            let diff = (user.level * num) - user.exp;
+            let nextLevelXP1 = user.level * num;
             let author = message.author
             let card = new canva.Rank()
             .setAvatar(author.displayAvatarURL({ dynamic: false, format: "png" }))
             .setUsername(author.username)
             .setDiscriminator(author.discriminator)
             .setCurrentXP(user.exp)
-            .setRequiredXP(diff)
+            .setRequiredXP(nextLevelXP1)
             .setStatus(author.presence.status)
             .setLevel(user.level)
             .setBackground("IMAGE", "https://cdn.mos.cms.futurecdn.net/2eUcV2529hH4DtBjHAH2b9-970-80.jpg")
