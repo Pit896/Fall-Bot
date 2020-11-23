@@ -2,6 +2,9 @@ const mongoose = require('mongoose');
 const Guild = require('../database/models/prefix');
 const discord = require('discord.js');
 const fall = require('fall-guys-api-fixed');
+const xptables = require('../database/models/xp');
+const num = 150
+const canva = require('canvacord');
 
 module.exports = async (client) => {
     client.on("message", async message => {
@@ -49,4 +52,51 @@ module.exports = async (client) => {
         if (command) 
             command.run(client, message, args);        
         });
+
+        let user = await xptables.findOne({
+            serverID: message.guild.id,
+            userID: message.author.id
+        });
+
+        if(message.content.startsWith(prefix + "rank")) {
+            let diff = (user.level * num) - user.exp;
+            let author = message.author
+            let card = new canva.Rank()
+            .setAvatar(author.displayAvatarURL({ dynamic: false, format: "png" }))
+            .setUsername(author.username)
+            .setDiscriminator(author.discriminator)
+            .setCurrentXP(user.exp)
+            .setRequiredXP(diff)
+            .setStatus(author.presence.status)
+            .setLevel(user.level)
+            .setBackground("IMAGE", "https://cdn.mos.cms.futurecdn.net/2eUcV2529hH4DtBjHAH2b9-970-80.jpg")
+            .setProgressBar(["#ed099a", "#1c1c1f"], "GRADIENT")
+
+            card.build()
+                .then(data => {
+                    let att = new discord.MessageAttachment(data, "rank.png");
+                    message.channel.send(att);
+                });
+        }
+
+        let amount = Math.ceil(Math.random() * 50) + 1;
+        if(!user) {
+            await new xptables({
+                serverID: message.guild.id,
+                userID: message.author.id,
+                exp: amount,
+                level: 1
+            }).save().catch(err => console.log(err));
+        } else {
+            let nextLevelXP = user.level * num;
+            if(user.exp >= nextLevelXP) {
+                user.level = user.level- + -1;
+                user.exp = 0;
+                user.save();
+                message.channel.send(`Wow ${message.author}! You get the level **${user.level}**:tada:`);
+            } else {
+                user.exp = user.exp- + -amount;
+                user.save();
+            }
+        }    
 }
