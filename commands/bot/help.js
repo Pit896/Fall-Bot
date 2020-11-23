@@ -51,7 +51,7 @@ const roleColor =
       const embed = new MessageEmbed()
         .setTitle("📬 Need help? Here are all of my commands:")
         .addFields(categories)
-        .addField("Leveling System", "`rank`")
+        .addField("LEVELING SYSTEM", "`rank`")
         .setDescription(
           `Use \`${settings.prefix}help\` followed by a command name to get more additional information on a command. For example: \`${settings.prefix}help ping\`.`
         )
@@ -76,7 +76,7 @@ const roleColor =
         return message.channel.send(embed);
       }
       
-      if(command == 'rank') {
+      if(!command == 'rank') {
         let embed2 = new MessageEmbed()
         .setTitle("Command Details:")
         .addField("PREFIX:", `\`${settings.prefix}\``)
