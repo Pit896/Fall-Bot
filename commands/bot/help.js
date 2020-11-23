@@ -51,6 +51,7 @@ const roleColor =
       const embed = new MessageEmbed()
         .setTitle("📬 Need help? Here are all of my commands:")
         .addFields(categories)
+        .addField("Leveling System", "`rank`")
         .setDescription(
           `Use \`${settings.prefix}help\` followed by a command name to get more additional information on a command. For example: \`${settings.prefix}help ping\`.`
         )
@@ -73,6 +74,26 @@ const roleColor =
           .setTitle(`Invalid command! Use \`${settings.prefix}help\` for all of my commands!`)
           .setColor("FF0000");
         return message.channel.send(embed);
+      }
+      
+      if(command == 'rank') {
+        let embed2 = new MessageEmbed()
+        .setTitle("Command Details:")
+        .addField("PREFIX:", `\`${settings.prefix}\``)
+        .addField(
+          "COMMAND:",
+          "rank"
+        )
+        .addField("ALIASES:", "No aliases for this command.")
+        .addField("DESCRIPTION:", "See your rank in the leveling system")
+        .setFooter(
+          `Requested by ${message.author.tag}`,
+          message.author.displayAvatarURL({ dynamic: true })
+        )
+        .setTimestamp()
+        .setColor(roleColor);
+        
+        message.channel.send(embed2);
       }
 
       const embed = new MessageEmbed()
