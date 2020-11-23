@@ -69,7 +69,7 @@ const roleColor =
           (c) => c.aliases && c.aliases.includes(args[0].toLowerCase())
         );
       
-      if(!command) continue;
+      if(!command) console.log("Someone use command help rank...");
       
       if(args[0] == 'rank') {
         let embed2 = new MessageEmbed()
