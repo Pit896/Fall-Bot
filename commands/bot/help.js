@@ -68,13 +68,6 @@ const roleColor =
         client.commands.find(
           (c) => c.aliases && c.aliases.includes(args[0].toLowerCase())
         );
-
-      if (!command) {
-        const embed = new MessageEmbed()
-          .setTitle(`Invalid command! Use \`${settings.prefix}help\` for all of my commands!`)
-          .setColor("FF0000");
-        return message.channel.send(embed);
-      }
       
       if(args[0] == 'rank') {
         let embed2 = new MessageEmbed()
