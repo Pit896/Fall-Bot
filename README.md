@@ -36,6 +36,7 @@ Use some library:
     "node-fetch": "^2.6.1",
     "node-superfetch": "^0.1.10",
     "pug": "^3.0.0",
+    "random": "^2.2.0",    
     "request": "^2.88.2",
     "something-random-on-discord": "0.0.2",  
     "youtube-search": "^1.1.4",
