@@ -24,6 +24,7 @@ Use some library:
     "express-handlebars": "^5.2.0",
     "fall-guys-api-fixed": "^1.0.1", -> Made by Me (: 
     "ffmpeg": "0.0.4",
+    "figlet": "^1.5.0",    
     "giphy-api": "^2.0.1",
     "http": "0.0.1-security",
     "imageapi.js": "^1.0.19",
