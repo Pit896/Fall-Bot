@@ -21,7 +21,7 @@ module.exports = {
         .setAuthor(`Action: Kick by ${message.author.username}`, message.author.displayAvatarURL({ dynamic: true }))
         .setDescription(`Kicked **${member.user.username}** by **${message.author.username}**\nReason: ${reason}`)
 
-        member.kick();
+        member.kick({ reason: reason });
         message.channel.send(embed);
     }
 }
