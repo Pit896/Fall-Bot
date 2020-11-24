@@ -1,6 +1,6 @@
 # FallGuys Bot
 
-**Version 1.0.1**
+**Version 1.1.0**
 
 Made by *Pit.js* with **discord.js** library.
 Here is the Source Code.
