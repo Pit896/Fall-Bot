@@ -18,7 +18,7 @@ module.exports = {
         .setColor("RED")
         .setTitle("Banned From Server: " + message.guild.name)
         .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
-        .setAuthor(`Action: ban by ${message.author.username}`, message.author.displayAvatarURL({ dynamic: true }))
+        .setAuthor(`Action: Ban by ${message.author.username}`, message.author.displayAvatarURL({ dynamic: true }))
         .setDescription(`Banned **${member.user.username}** by **${message.author.username}**\nReason: ${reason}`)
 
         member.ban();
