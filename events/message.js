@@ -7,7 +7,7 @@ const num = 150
 const canva = require('canvacord');
 
 module.exports = async (client) => {
-    client.on("message", async function(message) => {
+    client.on("message", async function(message) {
         if(message.author.bot) return;
         if(message.channel.type == 'news') return;
         if(message.channel.type == 'dm') return;
