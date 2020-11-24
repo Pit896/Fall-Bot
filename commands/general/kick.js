@@ -16,8 +16,7 @@ module.exports = {
             return message.channel.send("I don't have permission to kick!");
         }
 
-        if(member.hasPermission("ADMINISTRATOR")) return message.channel.send(`I can't kick ${member.user.username}!`) 
-
+        if(member) {
         let reason;
         reason = args.slice(1).join(" ") || 'None';
 
@@ -29,6 +28,7 @@ module.exports = {
         .setDescription(`Kicked **${member.user.username}** by **${message.author.username}**\nReason: ${reason}`)
 
         member.kick();
-        message.channel.send(embed);
+        message.channel.send(embed);            
+        }
     }
 }
