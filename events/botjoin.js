@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 
 module.exports = (client) => {
-    client.on('guildCreate', async guild => {
+    client.on('guildCreate', async function(guild) {
         let embed = new discord.MessageEmbed()
         .setThumbnail("https://static.wikia.nocookie.net/fallguysultimateknockout/images/6/62/Fall_Guys_Ultimate_Knockout_logo.png")
         .setTitle("Thanks for adding Me!")
