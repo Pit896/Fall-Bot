@@ -14,11 +14,7 @@ module.exports = {
         let reason;
         reason = args.slice(1).join(" ") || 'None';
 
-        if(!message.guild.me.hasPermission("BAN_MEMBERS")) {
-            return message.channel.send("I don't have permission to ban!");
-        }
-
-        if(member.hasPermission("ADMINISTRATOR")) return message.channel.send(`I can't ban ${member.user.username}!`) 
+        if(member) {
 
         let embed = new MessageEmbed()
         .setColor("RED")
@@ -28,6 +24,9 @@ module.exports = {
         .setDescription(`Banned **${member.user.username}** by **${message.author.username}**\nReason: ${reason}`)
 
         member.ban({ reason: reason });
-        message.channel.send(embed);
+        message.channel.send(embed);    
+        } else {
+            return message.channel.send(`I can't ban ${member.user.username}`)
+        }
     }
 }
