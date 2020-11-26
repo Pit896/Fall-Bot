@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'dice',
+    name: 'roll',
     description: 'Simple Dice Roll',
     category: 'Fun',
     usage: 'f!roll | f!roll <faces>',
