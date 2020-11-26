@@ -4,7 +4,7 @@ const Guild = require('../../database/models/prefix');
 
 module.exports = {
     name: 'shuffle',
-    description: 'Shufffle the queue',
+    description: 'Shuffle the queue',
     category: 'Music',
     usage: 'f!shuffle',
     run: async (client, message, args) => {
