@@ -15,6 +15,7 @@ client.aliases = new discord.Collection();
 client.colors = config.colors;
 client.emotes = config.emotes;
 client.queue = new Map();
+client.dbl = dbl
 
 readdir('./events/', async (err, files) => {
     if(err) console.log(err.stack)
