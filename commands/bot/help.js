@@ -102,6 +102,8 @@ module.exports = {
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))    
             
             message.channel.send(searchembed);   
+        } else {
+            message.channel.send("No Category Found.")
         }
 
         function emoji (id) {
