@@ -3,10 +3,10 @@ const { readdirSync } = require('fs');
 const Guild = require('../../database/models/prefix.js');
 
 module.exports = {
-  name: 'help',
+  name: 'commands',
   category: 'Bot',
-  description: 'FallGuys Bot help',
-  usage: 'f!help | f!help <cmd_name>',
+  description: 'FallGuys Bot commands',
+  usage: 'f!commands | f!commands <cmd_name>',
   run: async (client, message, args) => {
     
         const settings = await Guild.findOne({
@@ -53,7 +53,7 @@ const roleColor =
         .addFields(categories)
         .addField("LEVELING SYSTEM", "`rank`")
         .setDescription(
-          `Use \`${settings.prefix}help\` followed by a command name to get more additional information on a command. For example: \`${settings.prefix}help ping\`.`
+          `Use \`${settings.prefix}commands\` followed by a command name to get more additional information on a command. For example: \`${settings.prefix}commands ping\`.`
         )
         .setFooter(
           `Requested by ${message.author.tag}`,
@@ -68,8 +68,6 @@ const roleColor =
         client.commands.find(
           (c) => c.aliases && c.aliases.includes(args[0].toLowerCase())
         );
-      
-      if(!command) console.log("Someone use command help rank...");
       
       if(args[0] == 'rank') {
         let embed2 = new MessageEmbed()
