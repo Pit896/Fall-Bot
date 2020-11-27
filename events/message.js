@@ -12,7 +12,6 @@ module.exports = async (client) => {
         if(message.author.bot) return;
         if(message.channel.type == 'news') return;
         if(message.channel.type == 'dm') return;
-        if(message.channel.id === '781503906903097354' || '781803035525513216' || '781503617621426186' || '781915829360656397' || '781522050892169256' || '781522488755748874' || '781522082831663116' || '781522133523365929' || '781522729455190057' || '781522601930391552') return; //my support server channel blacklist        
 
         const settings = await Guild.findOne({
             guildID: message.guild.id,
