@@ -95,7 +95,7 @@ module.exports = {
         } else if(args[0] == 'search') {
             let searchembed = new MessageEmbed()
             .setTitle(`🔎Search Category Help`)
-            .setDescription("`gif` **|** `itunes` **|** `mdn` **|** `npm`")
+            .setDescription("`book` **|** `gif` **|** `itunes` **|** `mdn` **|** `npm`")
             .setColor('#399e80')
             .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
