@@ -8,8 +8,8 @@ module.exports = {
     usage: 'volume <1/100>',
     run: async (client, message, args) => {
         if(!args[0]) return sendError("Please specify the volume", message.channel);
-        if(args[0] > 100) return sendError("Please a number between 1 and 10", message.channel);
-        if(args[0] < 0) return sendError("Please a number between 1 and 10", message.channel);
+        if(args[0] > 100) return sendError("Please a number between 1 and 100", message.channel);
+        if(args[0] < 0) return sendError("Please a number between 1 and 100", message.channel);
 
         const channel = message.member.voice.channel;
         if (!channel)return sendError("You need to be in a voice channel to set volume!", message.channel);
