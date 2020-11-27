@@ -10,7 +10,7 @@ module.exports = {
     run: async (client, message, args) => {
         if(message.channel.nsfw === false) {
             message.channel.send("This channel isn't Marked NSFW!");
-        }
+        } else {
 
         try {
             let query = args.join(` `);
@@ -29,7 +29,7 @@ module.exports = {
             if (!description) return message.channel.send(`Couldn't find that book.`);
             const descriptionfix = description.substr(0, 600);
             let embed = new MessageEmbed()
-                .setColor(funcs.rc())
+                .setColor('RANDOM')
                 .setTitle(`${book.title}`)
                 .addField(`Written by:`, book.authors)
                 .addField(`Published by:`, book.publisher)
@@ -42,6 +42,7 @@ module.exports = {
             if (err.status === 404) return message.channel.send('Could not find any results.');
             console.log(err);
             return message.channel.send(`Oh no, an error occurred: \`${err.message}\`. Try again later!`);
+        }            
         }
     }
 }
