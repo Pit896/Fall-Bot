@@ -74,6 +74,7 @@ module.exports = {
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
       .addField("Requested by", song.req.tag, true)
+      .addField("Text Channel", ** + channel.name + **, true)
       .setFooter(`Views: ${song.views} | ${song.ago}`)
       return message.channel.send(thing);
     }
@@ -124,6 +125,8 @@ module.exports = {
       .setColor("BLUE")
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
+      .addField("Text Channel", "**" + serverQueue.textChannel + "**", true)
+      .addField("Voice Channel", `**${channel.name}**`, true)
       .addField("Requested by", song.req.tag, true)
       .setFooter(`Views: ${song.views} | ${song.ago}`)
       queue.textChannel.send(thing);
