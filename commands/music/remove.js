@@ -21,6 +21,8 @@ module.exports = {
         const song = queue.songs.splice(args[0] - 1, 1);
         let embed = new MessageEmbed()
         .setColor("GREEN")
-        .setDescription(`Removed: **\`${song[0].title}\`** from the queue.`)
+        .setDescription(`Removed: **\`${song[0].title}\`** from the queue.`);
+        
+        message.channel.send(embed);
     } 
 }
