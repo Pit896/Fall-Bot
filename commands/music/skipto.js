@@ -27,8 +27,8 @@ module.exports = {
   
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) return sendError("There is no queue.",message.channel).catch(console.error);
-      if (args[0] > queue.songs.length)
-        return sendError(`The queue is only ${queue.songs.length} songs long!`,message.channel).catch(console.error);
+      if (args[0] > queue.songs.length) return sendError(`The queue is only ${queue.songs.length} songs long!`,message.channel).catch(console.error);
+      if(args[0] == 1) return sendError("Please specify a number above one");
   
       queue.playing = true;
   
