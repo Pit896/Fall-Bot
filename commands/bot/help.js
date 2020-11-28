@@ -55,7 +55,7 @@ module.exports = {
         } else if(args[0] == 'fun') {
             let funembed = new MessageEmbed()
             .setTitle(`😄Fun Category Help`)
-            .setDescription("`8ball` **|** `ascii` **|** `cookie` **|** `dice` **|** `djs` **|** `meme` **|** `rip` **|** `wasted` **|** `stringify` **|** `translate` **|** `triggered`")
+            .setDescription("`8ball` **|** `ascii` **|** `cookie` **|** `dice` **|** `djs` **|** `inverse` **|** `meme` **|** `rip` **|** `wasted` **|** `stringify` **|** `translate` **|** `triggered`")
             .setColor('YELLOW')
             .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
