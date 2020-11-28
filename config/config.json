@@ -14,5 +14,11 @@
       "pause": "⏸️",
       "resume": "⏯️",
       "stop": "⏹️"
+    },
+    "credentials": {
+      "client_id": "770644571867709450",
+      "client_secret": "8WAclyzZ1y-SmbRtMY1k7h6fn9KrLUko",
+      "domain": "https://localhost",
+      "port": 8088
     }
 }
