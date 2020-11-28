@@ -27,6 +27,7 @@ Use some library:
     "figlet": "^1.5.0",    
     "giphy-api": "^2.0.1",
     "http": "0.0.1-security",
+    "humanize-duration": "^3.24.0",    
     "imageapi.js": "^1.0.19",
     "lyrics-finder": "^21.4.0",
     "moment": "^2.29.1",
