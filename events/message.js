@@ -53,8 +53,8 @@ module.exports = async (client) => {
             .setRequiredXP(diff)
             .setStatus(author.presence.status)
             .setLevel(user.level)
-            .setBackground("IMAGE", "https://cdn.mos.cms.futurecdn.net/2eUcV2529hH4DtBjHAH2b9-970-80.jpg")
-            .setProgressBar(["#ed099a", "#1c1c1f"], "GRADIENT")
+            .setBackground("IMAGE", "https://www.thegamesmachine.it/wp-content/uploads/2020/11/fall-guys-winter-update-1536x864.jpg")
+            .setProgressBar(["#5161db", "#161617"], "GRADIENT")
 
             card.build()
                 .then(data => {
