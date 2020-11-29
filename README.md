@@ -3,7 +3,7 @@
 **Version 1.1.0**
 
 Made by *Pit.js* with **discord.js** library.
-Here is the Source Code .
+Here is the Source Code.
 
 Link for install my library:
 https://www.npmjs.com/package/fall-guys-api-fixed
