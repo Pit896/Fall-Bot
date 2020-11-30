@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
 const { readdirSync } = require('fs');
-const Guild = require('../../database/models/prefix.js');
 
 module.exports = {
   name: 'commands',
@@ -53,7 +52,7 @@ const roleColor =
         .addFields(categories)
         .addField("LEVELING SYSTEM", "`rank`")
         .setDescription(
-          `Use \`${settings.prefix}commands\` followed by a command name to get more additional information on a command. For example: \`${settings.prefix}commands ping\`.`
+          `Use \`f!commands\` followed by a command name to get more additional information on a command. For example: \`f!commands ping\`.`
         )
         .setFooter(
           `Requested by ${message.author.tag}`,
@@ -72,7 +71,7 @@ const roleColor =
       if(args[0] == 'rank') {
         let embed2 = new MessageEmbed()
         .setTitle("Command Details:")
-        .addField("PREFIX:", `\`${settings.prefix}\``)
+        .addField("PREFIX:", `\`f!\``)
         .addField(
           "COMMAND:",
           "\`rank\`"
