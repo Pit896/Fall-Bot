@@ -1,5 +1,4 @@
 const { MessageEmbed } = require('discord.js');
-const prefix = require('../../database/models/prefix');
 const { readdirSync } = require('fs')
 
 module.exports = {
@@ -23,12 +22,12 @@ module.exports = {
             .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp(Date.now())
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
-            .addField("🤖Bot", `\`${settings.prefix}help bot\``, true)
-            .addField(`${emoji("772488751045541889")}Fall Guys`, `\`${settings.prefix}help fallguys\``, true)
-            .addField("😄Fun", `\`${settings.prefix}help fun\``, true)
-            .addField("🛠General", `\`${settings.prefix}help general\``, true)
-            .addField("🛑Owner", `\`${settings.prefix}help owner\``, true)
-            .addField("🔎Search", `\`${settings.prefix}help search\``, true);
+            .addField("🤖Bot", `\`f!help bot\``, true)
+            .addField(`${emoji("772488751045541889")}Fall Guys`, `\`f!help fallguys\``, true)
+            .addField("😄Fun", `\`f!help fun\``, true)
+            .addField("🛠General", `\`f!help general\``, true)
+            .addField("🛑Owner", `\`f!help owner\``, true)
+            .addField("🔎Search", `\`f!}help search\``, true);
 
             message.channel.send(embed)
         } else if(args[0] == 'bot') {
