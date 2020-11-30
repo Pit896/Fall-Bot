@@ -114,7 +114,6 @@ module.exports = {
       .setColor("BLUE")
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
-      .addField("Text Channel", "**" + serverQueue.textChannel + "**", true)
       .addField("Voice Channel", `**${channel.name}**`, true)
       .addField("Requested by", song.req.tag, true)
       .setFooter(`Views: ${song.views} | ${song.ago}`)
