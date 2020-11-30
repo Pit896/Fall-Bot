@@ -75,7 +75,7 @@ module.exports = {
         } else if(args[0] == 'music') {
             let musicembed = new MessageEmbed()
             .setTitle(`💿Music Category Help`)
-            .setDescription("`loop` **|** `lyrics` **|** `np` **|** `pause` **|** `play` **|** `queue` **|** `remove` **|** `resume` **|** `search` **|** `shuffle` **|** `skipto` **|** `stop` **|** `volume`")
+            .setDescription("`loop` **|** `lyrics` **|** `np` **|** `pause` **|** `play` **|** `queue` **|** `remove` **|** `resume` **|** `shuffle` **|** `skipto` **|** `stop` **|** `volume`")
             .setColor('#59324c')
             .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
