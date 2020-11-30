@@ -27,7 +27,6 @@ module.exports = {
             .addField(`${emoji("772488751045541889")}Fall Guys`, `\`${settings.prefix}help fallguys\``, true)
             .addField("😄Fun", `\`${settings.prefix}help fun\``, true)
             .addField("🛠General", `\`${settings.prefix}help general\``, true)
-            .addField("💿Music", `\`${settings.prefix}help music\``, true)
             .addField("🛑Owner", `\`${settings.prefix}help owner\``, true)
             .addField("🔎Search", `\`${settings.prefix}help search\``, true);
 
@@ -71,17 +70,7 @@ module.exports = {
             .setTimestamp()
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))    
             
-            message.channel.send(generalembed);     
-        } else if(args[0] == 'music') {
-            let musicembed = new MessageEmbed()
-            .setTitle(`💿Music Category Help`)
-            .setDescription("`loop` **|** `lyrics` **|** `np` **|** `pause` **|** `play` **|** `queue` **|** `remove` **|** `resume` **|** `shuffle` **|** `skipto` **|** `stop` **|** `volume`")
-            .setColor('#59324c')
-            .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
-            .setTimestamp()
-            .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))    
-            
-            message.channel.send(musicembed);     
+            message.channel.send(generalembed);      
         } else if(args[0] == 'owner') {
             let owenrembed = new MessageEmbed()
             .setTitle(`🛑Owner Category Help`)
