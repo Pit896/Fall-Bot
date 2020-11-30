@@ -18,7 +18,7 @@ module.exports = async (client) => {
             guildName: message.guild.name
         });
 
-        const prefix = settings.get('prefix');
+        const prefix = settings.prefix;
 
         if(!message.content.startsWith(prefix)) return;
     
