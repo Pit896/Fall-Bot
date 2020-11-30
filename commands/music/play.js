@@ -96,13 +96,12 @@ module.exports = {
       const queue = message.client.queue.get(message.guild.id);
         
   let stream = null;  
-    if (song.url.includes("youtube.com")) {
       stream = await ytdl(song.url);
       stream.on('error', err => {
         if (queue) {
         queue.songs.shift();
         play(queue.songs[0]);
-      }
+
       
   	 sendError(`An unexpected error has occurred.\nPossible type \`${err}\``, message.channel)
      return;
