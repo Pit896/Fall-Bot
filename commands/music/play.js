@@ -105,8 +105,8 @@ module.exports = {
       
   	 sendError(`An unexpected error has occurred.\nPossible type \`${err}\``, message.channel)
      return;
-});
     }
+});
     
     queue.connection.on("disconnect", () => message.client.queue.delete(message.guild.id));
 
