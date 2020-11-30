@@ -7,12 +7,6 @@ module.exports = {
   description: 'FallGuys Bot commands',
   usage: 'f!commands | f!commands <cmd_name>',
   run: async (client, message, args) => {
-    
-        const settings = await Guild.findOne({
-            guildID: message.guild.id
-        }, (err, guild) => {
-            if(err) console.log(err);
-        });
   
 const roleColor =
       message.guild.me.displayHexColor === "#000000"
