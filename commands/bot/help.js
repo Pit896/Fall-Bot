@@ -8,11 +8,6 @@ module.exports = {
     usage: 'f!help',
     run: async (client, message, args) => {
 
-        const settings = await prefix.findOne({
-            guildID: message.guild.id,
-            guildName: message.guild.name
-        });
-
         const roleColor = message.guild.me.displayHexColor === "#000000" ? "#ffffff" : message.guild.me.displayHexColor;
 
         if(!args[0]) {
