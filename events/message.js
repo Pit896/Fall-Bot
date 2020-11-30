@@ -12,13 +12,8 @@ module.exports = async (client) => {
         if(message.author.bot) return;
         if(message.channel.type == 'news') return;
         if(message.channel.type == 'dm') return;
-
-        const settings = await Guild.findOne({
-            guildID: message.guild.id,
-            guildName: message.guild.name
-        });
-
-        const prefix = settings.prefix;
+        
+        const prefix = 'f!';
 
         if(!message.content.startsWith(prefix)) return;
     
