@@ -4,12 +4,6 @@ const mongoose = require('mongoose');
 
 module.exports = (client) => {
     client.on('guildCreate', async function(guild) {
-        const settings = await Guild.create({
-            _id: mongoose.Types.ObjectId(),
-            guildID: guild.id,
-            guildName: guild.name,
-            prefix: "f!"
-        }).then(console.log("Saved new Guild on The Database!"));
 
         let embed = new discord.MessageEmbed()
         .setThumbnail("https://static.wikia.nocookie.net/fallguysultimateknockout/images/6/62/Fall_Guys_Ultimate_Knockout_logo.png")
