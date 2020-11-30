@@ -22,7 +22,7 @@ module.exports = {
             .addField("😄Fun", `\`f!help fun\``, true)
             .addField("🛠General", `\`f!help general\``, true)
             .addField("🛑Owner", `\`f!help owner\``, true)
-            .addField("🔎Search", `\`f!}help search\``, true);
+            .addField("🔎Search", `\`f!help search\``, true);
 
             message.channel.send(embed)
         } else if(args[0] == 'bot') {
