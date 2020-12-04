@@ -22,6 +22,7 @@ module.exports = {
             .addField("😄Fun", `\`f!help fun\``, true)
             .addField("🛠General", `\`f!help general\``, true)
             .addField("🛑Owner", `\`f!help owner\``, true)
+            .addField("📖Logger", `\`f!help logger\``, true)
             .addField("🔎Search", `\`f!help search\``, true);
 
             message.channel.send(embed)
@@ -69,6 +70,16 @@ module.exports = {
             let owenrembed = new MessageEmbed()
             .setTitle(`🛑Owner Category Help`)
             .setDescription("`eval`")
+            .setColor('RED')
+            .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
+            .setTimestamp()
+            .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))    
+            
+            message.channel.send(owenrembed);     
+        } else if(args[0] == 'logger') {
+            let owenrembed = new MessageEmbed()
+            .setTitle(`🛑Owner Category Help`)
+            .setDescription("`c-creater` **|** `c-deleter` **|** `c-updater` **|** `m-deleter` **|** `m-updater` **|** `r-creater` **|** `r-deleter` **|** `r-updater`")
             .setColor('RED')
             .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
