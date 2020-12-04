@@ -78,7 +78,7 @@ module.exports = {
             message.channel.send(owenrembed);     
         } else if(args[0] == 'logger') {
             let owenrembed = new MessageEmbed()
-            .setTitle(`🛑Owner Category Help`)
+            .setTitle(` Category Help`)
             .setDescription("`c-creater` **|** `c-deleter` **|** `c-updater` **|** `m-deleter` **|** `m-updater` **|** `r-creater` **|** `r-deleter` **|** `r-updater`")
             .setColor('RED')
             .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
