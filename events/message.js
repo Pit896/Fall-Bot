@@ -28,8 +28,20 @@ module.exports = async (client) => {
     
         if (!command) command = client.commands.get(client.aliases.get(cmd));
     
-        if (command) 
-            command.run(client, message, args);
+        if (command) {
+            if(command.timeout) {
+                if(client.timeout.has(`${command.name}${message.author.id}`)) {
+                    return message.channel.send(`**⚔ You are on Cooldown. You need to wait ${ms(client.timeout.get(`${command.name}${message.author.id}`) - Date.now(), { long: true })}**`);
+                }
+                command.run(client, message, args);
+                client.timeout.set(`${command.name}${message.author.id}`, Date.now() + command.timeout);
+                setTimeout(() => {
+                    client.timeout.delete(`${command.name}${message.author.id}`);
+                }, command.timeout);
+            } else {
+                command.run(client, message, args);
+            }
+        }
             
         let user = await xptables.findOne({
             serverID: message.guild.id,
