@@ -5,6 +5,7 @@ module.exports = {
     category: 'Bot',
     description: 'Send you all info about me',
     usage: 'f!about',
+    timeout: 2000,
     run: async (client, message, args) => {
 
         let embed = new MessageEmbed()
