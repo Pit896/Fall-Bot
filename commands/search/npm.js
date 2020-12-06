@@ -8,6 +8,7 @@ module.exports = {
     category: 'Search',
     description: 'Npm Search',
     usage: 'f!npm <query>',
+    timeout: 1500,
     run: async (client, message, args) => {
         const pkg = args.join(' ');
         if (!pkg) return funcs.send('Provided no input.');
