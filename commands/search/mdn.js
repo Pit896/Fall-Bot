@@ -8,6 +8,7 @@ module.exports = {
     description: 'Search on Mozilla Developer Network',
     usage: 'f!mdn <query>',
     aliases: ['mozilla'],
+    timeout: 1000,
     run: async (client, message, args) => {
         try {
             const query = args.join(" ");
