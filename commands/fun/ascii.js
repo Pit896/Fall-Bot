@@ -5,6 +5,7 @@ module.exports = {
     category: 'Fun',
     description: 'Text Generator!',
     usage: 'f!ascii <text>',
+    timeout: 2000,
     run: async (client, message, args) => {
 
         if(!args.join(" ")) return message.channel.send("To Text Provided!");
