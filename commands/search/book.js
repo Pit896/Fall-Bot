@@ -7,6 +7,7 @@ module.exports = {
     category: 'Search',
     usage: 'f!book <query>',
     aliases: ['books', 'booksearch'],
+    timeout: 1400,
     run: async (client, message, args) => {
         if(message.channel.nsfw === false) {
             message.channel.send("This channel isn't Marked NSFW!");
