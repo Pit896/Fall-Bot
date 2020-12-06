@@ -7,6 +7,7 @@ module.exports = {
     category: 'Fun',
     usage: 'f!djs <somethings>',
     aliases: ['docs'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         const url = `https://djsdocs.sorta.moe/v2/embed?src=stable&q=${encodeURIComponent(args.join(" "))}`;
