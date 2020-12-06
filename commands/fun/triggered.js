@@ -7,6 +7,7 @@ module.exports = {
     category: 'Fun',
     description: 'Triggering (new verb [;)',
     usage: 'f!triggered',
+    timeout: 1200,
     run: async (client, message, args) => {
 
         const me = message.author;
