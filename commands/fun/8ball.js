@@ -5,6 +5,7 @@ module.exports = {
     description: '8Ball is fun (;',
     category: 'Fun',
     usage: 'f!8ball <question>',
+    timeout: 1000,
     run: async (client, message, args) => {
 
         if(!args.join(" ")) {
