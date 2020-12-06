@@ -5,8 +5,9 @@ const { MessageAttachment } = require('discord.js');
 module.exports = {
     name: 'wasted',
     category: 'Fun',
-    description: 'Triggering (new verb [;)',
+    description: 'Wastering (new verb [;)',
     usage: 'f!wasted',
+    timeout: 1100,
     run: async (client, message, args) => {
 
         const me = message.author;
