@@ -8,6 +8,7 @@ module.exports = {
     description: "Send you A celebration info",
     usage: "f!celebration <name_celebration>",
     aliases: ['cb'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         if(!args.join(" ")) return message.channel.send(`Unknow Search.`);
