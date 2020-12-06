@@ -7,6 +7,7 @@ module.exports = {
     description: "Send you An emote info",
     usage: "f!emote <name_emote>",
     aliases: ['e'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         try {
