@@ -7,6 +7,7 @@ module.exports = {
     category: 'Search',
     usage: 'f!gif <gif_name>',
     aliases: ['giphy'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         if(message.channel.nsfw === false) {
