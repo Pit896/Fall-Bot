@@ -6,6 +6,7 @@ module.exports = {
     category: 'Bot',
     description: 'Send you a random meme',
     usage: 'f!meme',
+    timeout: 1000,
     run: async (client, message, args) => {
 
         let data = await random.getMeme();
