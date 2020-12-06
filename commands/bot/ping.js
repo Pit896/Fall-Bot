@@ -5,7 +5,7 @@ module.exports = {
     category: "Bot",
     description: "Bot latency",
     usage: "f!ping",
-    timeout: 1500,
+    timeout: 2000,
     run: async (client, message, args) => {
 
         message.channel.send('Calculating Latency...').then(m => m.delete({ timeout: 2000 }))
