@@ -8,6 +8,7 @@ module.exports = {
     description: 'Are you dying?',
     usage: 'f!rip',
     aliases: ['die'],
+    timeout: 1300,
     run: async (client, message, args) => {
 
         const me = message.author;
