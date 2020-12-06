@@ -7,6 +7,7 @@ module.exports = {
     category: 'Search',
     description: 'Itunes Search',
     usage: 'f!itunes <query>',
+    timeout: 1200,
     run: async (client, message, args) => {
         try {
             const query = args.join('');
