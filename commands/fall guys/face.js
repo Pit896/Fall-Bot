@@ -7,6 +7,7 @@ module.exports = {
     description: "Send you A face info",
     usage: "f!face <name_face>",
     aliases: ['f'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         try {
