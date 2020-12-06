@@ -8,6 +8,7 @@ module.exports = {
     description: "Send you A pattern info",
     usage: "f!pattern <name_pattern>",
     aliases: ['p'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         if(!args.join(" ")) return message.channel.send(`Unknow Search.`);
