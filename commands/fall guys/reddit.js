@@ -8,6 +8,7 @@ module.exports = {
     description: "Send you a Random Subreddit of r/FallGuysGame",
     usage: "f!post",
     aliases: ['reddit'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         let subreddit = 'FallGuysGame'
