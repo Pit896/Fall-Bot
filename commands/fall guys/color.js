@@ -7,6 +7,7 @@ module.exports = {
     description: "Send you A color info",
     usage: "f!color <name_color>",
     aliases: ['c'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         if(!args.join(" ")) return message.channel.send(`Unknow Search.`);
