@@ -6,6 +6,7 @@ module.exports = {
     category: "Bot",
     description: "Bot uptime",
     usage: "f!uptime",
+    timeout: 2000,
     run: async (client, message, args) => {
 
         message.channel.send('Calculating Uptime...').then(m => m.delete({ timeout: 2000 }))
