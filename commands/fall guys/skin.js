@@ -7,6 +7,7 @@ module.exports = {
     description: "Send you A skin info",
     usage: "f!skin <name_skin>",
     aliases: ['s'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         if(!args.join(" ")) return message.channel.send(`Unknow Search.`);
