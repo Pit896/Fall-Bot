@@ -5,8 +5,9 @@ const { MessageAttachment } = require('discord.js');
 module.exports = {
     name: 'inverse',
     category: 'Fun',
-    description: 'Ib]verse your AVATAR',
-    usage: 'f!INVERSE',
+    description: 'Inverse your avatar',
+    usage: 'f!inverse',
+    timeout: 1000,
     run: async (client, message, args) => {
 
         const me = message.author;
