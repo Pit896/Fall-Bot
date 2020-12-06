@@ -7,6 +7,7 @@ module.exports = {
     description: 'Send you the last Fall Guys news',
     usage: 'f!news',
     aliases: ['n'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         let embed = new MessageEmbed()
