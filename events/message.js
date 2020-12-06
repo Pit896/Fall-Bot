@@ -5,6 +5,7 @@ const discord = require('discord.js');
 const xptables = require('../database/models/xp');
 const num = 150
 const canva = require('canvacord');
+const ms = require('ms');
 
 
 module.exports = async (client) => {
