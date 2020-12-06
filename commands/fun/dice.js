@@ -4,6 +4,7 @@ module.exports = {
     category: 'Fun',
     usage: 'f!roll | f!roll <faces>',
     aliases: ['diceroll', 'dice'],
+    timeout: 500,
     run: async (client, message, args) => {
 
         if(!args[0]) {
