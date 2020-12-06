@@ -6,6 +6,7 @@ module.exports = {
     description: 'FallGuys Bot help',
     category: 'Bot',
     usage: 'f!help',
+    timeout: 1500,
     run: async (client, message, args) => {
 
         const roleColor = message.guild.me.displayHexColor === "#000000" ? "#ffffff" : message.guild.me.displayHexColor;
