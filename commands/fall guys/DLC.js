@@ -6,6 +6,7 @@ module.exports = {
     description: "Send you all Fall Guys DLC",
     usage: "f!dlc",
     aliases: ['DLC'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         let pages = ['Dress your Fall Guy in all manners of fantastical costume combinations with this set and gain a discounted 10,000 Kudos to boot! Kudos is an in-game currency you can use to buy in-game items that customise different aspects of your Fall Guy, such as costumes, colours and patterns! This pack gives you 10,000 Kudos! Fall Guys game is required. Kudos is limited by user-account and platform.',
