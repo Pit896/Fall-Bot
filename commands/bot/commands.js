@@ -6,6 +6,7 @@ module.exports = {
   category: 'Bot',
   description: 'FallGuys Bot commands',
   usage: 'f!commands | f!commands <cmd_name>',
+  timeout: 1500,
   run: async (client, message, args) => {
   
 const roleColor =
