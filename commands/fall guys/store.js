@@ -7,6 +7,7 @@ module.exports = {
     description: "Send you the daily shop",
     usage: "f!store",
     aliases: ['shop'],
+    timeout: 1000,
     run: async (client, message, args) => {
         
 
