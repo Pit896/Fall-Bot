@@ -7,6 +7,7 @@ module.exports = {
     description: "Send you all fall guys minigames",
     usage: "f!rounds <number between 1 to 30>",
     aliases: ['round'],
+    timeout: 1000,
     run: async (client, message, args) => {
 
         let pages = ['**Races:**\`\`\`1 ->  DIZZY HEIGHTS\n2 ->  SEE SAW\n9 ->  TIP TOE\n3 ->  DOOR DASH\n12 -> FRUIT CHUTE\n13 -> GATE CRASH\n14 -> HIT PARADE\n15 -> KNIGHT FEVER\n16 -> SLIME CLIMB\n17 -> THE WHIRLYGIG\n18 -> WALL GUYS\n30 -> BIG FANS\`\`\`', '**Survival:**\`\`\`4 -> JUMP CLUB\n19 -> BLOCK PARTY\n20 -> ROLL OUT\`\`\`', "**Team:**\`\`\`5 ->  EGG SCRAMBLE\n6 ->  ROCK 'N' ROLL\n7 ->  FALL BALL\n23 -> EGG SIEGE\n24 -> HOARDERS\n25 -> HOOPSIE DAISY\n26 -> JINXED\n27 -> TEAM TAIL TAG\`\`\`", '**Logic:** \`\`\`22 -> PERFECT MATCH\`\`\`', '**Hunt:** \`\`\`8 -> TAIL TAG\n21 -> HOOPSIE LEGENDS\`\`\`', '**Final:**\`\`\`10 -> FALL MOUNTAIN\n11 -> HEX-A-GONE\n28 -> JUMP SHOWDOWN\n29 -> ROYAL FUMBLE\`\`\`'];
