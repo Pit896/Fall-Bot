@@ -6,6 +6,7 @@ module.exports = {
     category: 'Fun',
     description: 'Stringify',
     usage: 'f!stringify | f!stringify <number>',
+    timeout: 2000,
     run: async (client, message, args) => {
 
         if(!args[0]) {
