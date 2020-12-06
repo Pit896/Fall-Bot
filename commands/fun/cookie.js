@@ -7,6 +7,7 @@ module.exports = {
     category: 'Fun',
     description: 'Fortune cookie tip',
     usage: 'f!cookie',
+    timeout: 1200,
     run: async (client, message, args) => {
 
         try {
