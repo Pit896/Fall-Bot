@@ -5,6 +5,7 @@ module.exports = {
     category: `Fall Guys`,
     usage: `f!social`,
     description: `Send all social links of Fall Guys`,
+    timeout: 1000,
     run: async (client, message, args) => {
 
         let embed = new MessageEmbed()
