@@ -30,7 +30,7 @@ module.exports = {
         } else if(args[0] == 'bot') {
             let botembed = new MessageEmbed()
             .setTitle("🤖Bot Category Help")
-            .setDescription("`about` **|** `commands` **|** `help` **|** `ping` **|** `uptime`")
+            .setDescription("`about` **|** `botinfo` **|** `commands` **|** `help` **|** `ping` **|** `uptime`")
             .setColor('BLUE')
             .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
