@@ -6,6 +6,7 @@ module.exports = {
     description: 'See info about FallGuys Bot',
     category: 'Bot',
     usage: 'f!botinfo',
+    timeout: 2000,
     run: async (client, message, args) => {
 
         let servercount = client.guilds.cache.size;
