@@ -11,7 +11,7 @@ module.exports = {
     run: async (client, message, args) => {
 
         let embed = new MessageEmbed()
-        .setColor("#33cccc")
+        .setColor("#2783e6")
         .setURL("https://fallguys.com/news/season-3-theme-reveal-20-off-sale-golden-joysticks")
         .setImage("https://fallguys.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fvsmfukibxsuz%2F5k7tFPZGllG9xT3g5oXC5A%2Fcb75ec4f8bbcdb9b2fc73f9f303b366c%2FSeason3__1_.jpg&w=1200&q=75")
         .setAuthor("News", client.user.displayAvatarURL())
