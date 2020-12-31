@@ -1,3 +1,5 @@
+const { token } = requre('../config/config.json')
+
 module.exports = (client) => {
     client.on('ready', async function() {
         console.log(`${client.user.username} Ready!`);
@@ -5,6 +7,6 @@ module.exports = (client) => {
 //        client.user.setPresence({ activity: { name: `FallGuys Bot | f!help 1.1.0 | 🔮New Leveling System`, type: 'STREAMING', url: 'https://www.twitch.tv/smash690' }});    
           client.user.setPresence({ activity: { name: 'FallGuys Bot | f!help 1.1.1 or f!commands | New Logger System', type: 'LISTENING' }}); 
     });
-    client.login('NzcwNjQ0NTcxODY3NzA5NDUw.X5gkrw.kZ7-Z8iSlE3tuL26HrLQZ6v3H0k');
+    client.login(token);
 }
    
