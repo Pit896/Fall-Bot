@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-console.log("Connecting...");
-
 module.exports = async (client) => {
+    console.log("Connecting...");    
+    
     await mongoose.connect(process.env.MONGO, {
         useNewUrlParser: true,
         useUnifiedTopology: true
