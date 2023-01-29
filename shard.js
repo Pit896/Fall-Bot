@@ -2,7 +2,7 @@ const { ShardingManager } = require('discord.js');
 require('dotenv').config();
 
 const shards = new ShardingManager('./bot.js', {
-    token: 'NzcwNjQ0NTcxODY3NzA5NDUw.X5gkrw.OIb45E-U_4SLB0BthR8vX94-vls',
+    token: 'token here',
     totalShards: "auto"
 });
 
