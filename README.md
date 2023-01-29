@@ -9,7 +9,7 @@ Here is the Source Code.
     <img src="https://top.gg/api/widget/770644571867709450.svg" alt="FallGuys Bot" />
 </a>
 
-Link for install my library:
+Link to install my library:
 https://www.npmjs.com/package/fall-guys-api-fixed
 
 Link for invite it:
